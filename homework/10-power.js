@@ -6,8 +6,12 @@
 
 function power(base, exponent) {
   // your code
+  let result = 1;
+  for (let i = 0; i < exponent; i++){
+    result = result * base;
+  }
+  return result
 }
-
 // Expected output:
 console.log(power(2, 3));   // 8
 console.log(power(5, 0));   // 1
